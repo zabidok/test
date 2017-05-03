@@ -1,0 +1,60 @@
+ul > li:first-child > .btn-group > .up, ul > li:last-child > .btn-group > .down {
+    opacity: .1;
+    cursor: not-allowed;
+}
+
+.getparent .rename {
+    display: none;
+}
+
+.addnew {
+    margin-bottom: 10px;
+}
+
+#tempmenu .btn-group {
+    display: none;
+}
+
+.root ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+ul .list-group-item {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+ul .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+ul .list-group-item:last-child {
+    border-left: none;
+
+}
+
+ul .list-group-item:before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #dddddd;
+    top: 0;
+    width: 15px;
+    margin-left: -15px;
+    margin-top: 26px;
+}
+
+ul .list-group-item:last-child > .btn:before {
+    content: "";
+    position: absolute;
+    height: 27px;
+    border-left: 1px solid #dddddd;
+    top: 0;
+    margin-left: -28px;
+}
+
+li > .btn {
+    margin-right: 10px;
+}
