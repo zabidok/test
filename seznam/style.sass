@@ -1,0 +1,171 @@
+$font-stack: Helvetica, sans-serif
+$primary-color: #333
+$blue: #0000ff
+$breakpoint: 1024px
+$hero-height: 60vh
+
+body
+  margin: 0
+/**
+ * Layout
+ */
+header.content
+  padding: 20px 15px
+
+.nav_list
+  margin: 0
+  padding: 0
+  float: none
+
+.nav_item
+  position: relative
+
+.nav_list a
+  padding: 0.75em 1.5em
+  transition: all .25s ease-in-out
+  font-size: 16px
+
+.nav_list a:after
+  display: block
+  position: absolute
+  left: 0
+  bottom: -2px
+  width: 0
+  height: 2px
+  background-color: #0475bc
+  content: ""
+  -webkit-transition: all 0.2s
+  -moz-transition: all 0.2s
+  -o-transition: all 0.2s
+  transition: all 0.2s
+
+.nav_list a:hover:after
+  width: 100%
+
+.nav_item,
+.nav_item a
+  display: block
+
+.nav
+  background-color: #f5f5f5
+  height: 40px
+
+.nav a
+  color: #555
+  text-decoration: none
+  display: inline-block
+
+#hero
+  background: #32b3ed
+  background: -webkit-linear-gradient(left, #0474bc, #32b3ed)
+  background: -o-linear-gradient(right, #0474bc, #32b3ed)
+  background: -moz-linear-gradient(right, #0474bc, #32b3ed)
+  background: linear-gradient(to right, #0474bc, #32b3ed)
+  box-shadow: inset 0 0 4px #0474bc
+  height: 30vh
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+
+#hero p
+  color: white
+  width: 60%
+  font-size: 60px
+
+.content
+  max-width: 1170px
+  margin: 0 auto
+
+.content
+  padding: 0 15px
+
+.header
+  text-align: center
+
+.header > p
+  font-size: 18px
+  padding: 0 12px
+  position: relative
+  display: inline-block
+  line-height: 34px !important
+
+.header > p:before, .header > p:after
+  content: ' '
+  width: 70%
+  position: absolute
+  border-width: 1px
+  border-color: #bbb
+  top: 17px
+  border-bottom-style: solid
+
+.header > p:after
+  left: 100%
+
+.header > p:before
+  right: 100%
+
+.box_list
+  display: flex
+
+.box_wrap
+  display: flex
+  width: 33.3%
+  padding: 10px
+
+.box_item
+  border: 1px solid
+  padding: 5px
+
+.btn_list
+  text-align: center
+
+.filter_list
+  font-size: 0
+  text-align: center
+
+.filter_item
+  display: inline-block
+  width: 25%
+
+.filter_item img
+  width: calc(100% - 30px)
+  margin: 15px
+
+footer
+  background-color: #1a1a1a
+  .footer
+    font-size: 0
+    ul a
+      color: #fff
+  .footer > div
+    display: inline-block
+    width: calc(25% - 30px)
+    font-size: 16px
+    vertical-align: top
+    padding: 15px
+    color: #fff
+
+#about
+  color: #fff
+
+.headline
+  border-bottom: 2px solid #fff
+  margin-bottom: 10px
+
+.headline h3
+  margin: 0 0 -2px 0
+  padding-bottom: 5px
+  display: inline-block
+  border-bottom: 2px solid #0474bc
+  text-transform: uppercase
+
+@media screen and (min-width: $breakpoint)
+  .nav_list
+    float: right
+  .nav_list > .nav_item
+    margin-left: 10px
+  .nav_list > .nav_item, .nav_list > .nav_item a
+    display: inline-block
+  #hero
+    height: 60vh
