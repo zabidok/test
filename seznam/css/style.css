@@ -10,7 +10,7 @@ body {
   .nav_list a {
     padding: 0.75em 1.5em;
     transition: all 0.25s ease-in-out;
-    font-size: 16px; }
+    font-size: 2em; }
     .nav_list a:after {
       display: block;
       position: absolute;
@@ -57,7 +57,7 @@ body {
 .header {
   text-align: center; }
   .header > p {
-    font-size: 18px;
+    font-size: 3em;
     padding: 0 20px;
     position: relative;
     display: inline-block;
@@ -117,6 +117,7 @@ body {
     width: 25%; }
   .filter_list .filter_item img {
     width: calc(100% - 30px);
+    height: auto;
     margin: 15px; }
 
 footer {
@@ -181,7 +182,8 @@ footer {
         margin-left: 10px;
         display: inline-block; }
         .nav .nav_list > .nav_item a {
-          display: inline-block; }
+          display: inline-block;
+          font-size: 1em; }
 
   #hero {
     height: 60vh; }
@@ -193,6 +195,9 @@ footer {
     .box_list .box_wrap {
       display: flex;
       width: 33.3%;
-      padding: 0 30px; } }
+      padding: 0 30px; }
+
+  .header > p {
+    font-size: 1.5em; } }
 
 /*# sourceMappingURL=style.css.map */
