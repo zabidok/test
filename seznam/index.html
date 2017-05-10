@@ -6,6 +6,7 @@
 </head>
 <body>
 <div class="container">
+
     <header class="content">
         <nav class="nav">
             <a href="#"><img src="img/logo.png"/></a>
@@ -15,6 +16,7 @@
             </ul>
         </nav>
     </header>
+
     <div id="hero">
         <p>Simple text in the middle of this background</p>
     </div>
@@ -58,14 +60,14 @@
                 <p>Filter</p>
             </div>
             <div class="btn_list">
-                <button class="btn btn_item">Category 01</button>
-                <button class="btn btn_item">Category 02</button>
+                <button class="btn filter active" onclick="select('category_1', this)">Category 01</button>
+                <button class="btn filter" onclick="select('category_2', this)">Category 02</button>
             </div>
             <div class="filter_list">
-                <a href="#" class="filter_item"><img src="img/img01.png"/></a>
-                <a href="#" class="filter_item"><img src="img/img02.png"/></a>
-                <a href="#" class="filter_item"><img src="img/img03.png"/></a>
-                <a href="#" class="filter_item"><img src="img/img04.png"/></a>
+                <a href="#" class="filter_item category_1"><img src="img/img01.png"/></a>
+                <a href="#" class="filter_item category_1 category_2"><img src="img/img02.png"/></a>
+                <a href="#" class="filter_item category_1"><img src="img/img03.png"/></a>
+                <a href="#" class="filter_item category_1 category_2"><img src="img/img04.png"/></a>
             </div>
         </div>
     </div>
@@ -73,7 +75,7 @@
     <footer>
         <div class="content footer">
             <div id="about">
-                <a href="/"><img src="img/logo.png"/></a>
+                <a href="/"><img src="img/logo_footer.png"/></a>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac libero quis tortor interdum
                     maximus. Fusce eu tempus neque. </p>
             </div>
@@ -82,8 +84,8 @@
                     <h3>Odkazy</h3>
                 </div>
                 <div class="btn_list">
-                    <button class="btn btn_item">Odkaz</button>
-                    <button class="btn btn_item">Odkaz</button>
+                    <a href="#" class="btn btn_item">Odkaz</a>
+                    <a href="#" class="btn btn_item">Odkaz</a>
                 </div>
             </div>
             <div class="odkazy">
