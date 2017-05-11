@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <title>Test page for senzam</title>
+</head>
+<body>
+<div class="container">
+    <div class="btns">
+        <a class="btn" onclick="openModal();" href="#">Open modal 1</a>
+        <a class="btn" onclick="toggleModal();" href="#">Open modal 2</a>
+    </div>
+    <div class="overlay hidden" id="overlay">
+        <div class="modal-content">
+            <span class="button-close" onclick="closeModal();"></span>
+            <h3>Modal 1 Heading</h3>
+            <p>Modal 1 Content</p>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay2">
+        <div class="modal-content">
+            <span class="button-close" onclick="toggleModal();"></span>
+            <h3>Modal 2 Heading</h3>
+            <p>Modal 2 Content</p>
+        </div>
+    </div>
+    <script src="my.js"></script>
+</div>
+</body>
+</html>
